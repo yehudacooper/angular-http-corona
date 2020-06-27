@@ -7,8 +7,9 @@
     <li>flag : {{country.flag}}</li>
     
 </ul>  -->
+<h1>" מוקדש לתמר קופר הלחוצה</h1>
 <button (click)="showCountries()">click</button>
- <table style="width:100%">
+ <table style="width:100%" *ngIf="!country1">
   <tr>
     <th>Name</th>
     <th>Capital</th>
