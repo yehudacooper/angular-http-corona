@@ -1,0 +1,44 @@
+ 
+ <!-- <ul *ngFor="let country of allCountries" >
+    <li>name : {{country.name}}</li>
+    <li>capital : {{country.capital}}</li>
+    <li>region : {{country.region}}</li>
+    <li>population : {{country.population}}</li>
+    <li>flag : {{country.flag}}</li>
+    
+</ul>  -->
+<button (click)="showCountries()">click</button>
+ <table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Region</th>
+    <th>Population</th>
+    <th>Flag</th>
+  </tr>
+  <tr *ngFor="let country of allCountries" (click)="choosenCountry(country.name)">
+    <td>{{country.name}}</td>
+    <td>{{country.capital}}</td>
+    <td>{{country.region}}</td>
+    <td>{{country.population}}</td>
+    <td><img src={{country.flag}} ></td> 
+  </tr>
+</table>
+
+<ul *ngIf="country1">
+    <li>Country : {{country1.Country}}</li>
+    <li>CountryCode : {{country1.CountryCode}}</li>
+    <li>Slug : {{country1.Slug}}</li>
+    <li>NewConfirmed : {{country1.NewConfirmed}}</li>
+    <li>TotalConfirmed : {{country1.TotalConfirmed}}</li>
+    <li>NewDeaths : {{country1.NewDeaths}}</li>
+    <li>TotalDeaths : {{country1.TotalDeaths}}</li>
+    <li>NewRecovered : {{country1.NewRecovered}}</li>
+    <li>TotalRecovered : {{country1.TotalRecovered}}</li>
+    <li>Date : {{country1.Date}}</li>
+   
+    
+</ul>
+
+
+

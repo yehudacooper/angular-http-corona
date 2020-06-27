@@ -1,0 +1,16 @@
+img{
+    height: 20px;
+    width: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+/* table{
+    margin-left:40px;
+    margin-right:15%;
+}  */
+
+
+
