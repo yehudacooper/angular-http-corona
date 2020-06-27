@@ -735,8 +735,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "showCountries",
         value: function showCountries() {
-          console.log(this.allCountries);
-          console.log(this.coronaData);
+          this.country1 = false;
         }
       }, {
         key: "choosenCountry",
@@ -785,7 +784,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return ctx.showCountries();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "click");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "click to show countries");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 

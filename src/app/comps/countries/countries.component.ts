@@ -21,8 +21,7 @@ export class CountriesComponent implements OnInit {
     this.myCoronaService.getCorona().subscribe(data => {this.coronaData = data; });
   }
    showCountries(){
-    console.log(this.allCountries);
-    console.log(this.coronaData);
+     this.country1 = false;
    }
    choosenCountry(countryName: string){
      this.myCoronaService.choosenCountry = countryName;

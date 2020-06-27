@@ -365,8 +365,7 @@ class CountriesComponent {
         this.myCoronaService.getCorona().subscribe(data => { this.coronaData = data; });
     }
     showCountries() {
-        console.log(this.allCountries);
-        console.log(this.coronaData);
+        this.country1 = false;
     }
     choosenCountry(countryName) {
         this.myCoronaService.choosenCountry = countryName;
@@ -389,7 +388,7 @@ CountriesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CountriesComponent_Template_button_click_2_listener() { return ctx.showCountries(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "click");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "click to show countries");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, CountriesComponent_table_4_Template, 13, 1, "table", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, CountriesComponent_ul_5_Template, 21, 10, "ul", 2);
